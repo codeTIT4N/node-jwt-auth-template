@@ -3,7 +3,7 @@ const app = express()
 const connectDB = require('./db/connect')
 const notFound = require('./middleware/not-found')
 const authRoute = require('./routes/auth')
-const protectedRoutes = require('./routes/protected-routes')
+const protectedRoutes = require('./routes/protected')
 require('dotenv').config()
 
 const port = process.env.PORT || 3000;
