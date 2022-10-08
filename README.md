@@ -28,7 +28,7 @@ git clone https://github.com/codeTIT4N/node-jwt-auth-template.git
 - MONGO_URI: Sign up for a free mongoDB account, if you don't have any. Create a new cluster and connect it using this URI. Refer: https://www.mongodb.com/docs/manual/reference/connection-string
 - PORT: This is optional. By default the port will be 3000.
 
-4: Run the following commands:
+4: Run the following commands inside the project:
 ```bash
 npm install
 npm start
