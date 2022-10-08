@@ -27,7 +27,7 @@ const loginUser = async (req, res) => {
     const token = jwt.sign({ id: req.userId }, process.env.JWT_SECRET, {
         expiresIn: process.env.JWT_LIFETIME
     });
-    res.header('auth-token', token).send(token);
+    res.header('Authorization', `Bearer ${token}`).send(token);
 }
 
 module.exports = {

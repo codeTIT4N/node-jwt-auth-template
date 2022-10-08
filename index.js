@@ -3,6 +3,7 @@ const app = express()
 const connectDB = require('./db/connect')
 const notFound = require('./middleware/not-found')
 const authRoute = require('./routes/auth')
+const protectedRoutes = require('./routes/protected-routes')
 require('dotenv').config()
 
 const port = process.env.PORT || 3000;
@@ -12,7 +13,7 @@ app.use(express.json())
 
 // Routes
 app.use('/api/user', authRoute);
-
+app.use('/api/protected', protectedRoutes); // just for example
 app.use(notFound)
 
 
